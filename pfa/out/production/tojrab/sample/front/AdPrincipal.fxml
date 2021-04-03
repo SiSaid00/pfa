@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="651.0" prefWidth="600.0" style="-fx-background-color: fff;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ctrl.AdPrincipal">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="10.0" prefHeight="146.0" prefWidth="576.0" style="-fx-border-color: black; -fx-border-radius: 10px;">
+         <children>
+            <ImageView fitHeight="142.0" fitWidth="124.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/istockphoto-1087531642-170667a.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="106.0" fitWidth="74.0" layoutX="487.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/بنزرت.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="name" layoutX="138.0" layoutY="14.0" text="name">
+               <font>
+                  <Font name="Gabriola" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="lastName" layoutX="138.0" layoutY="45.0" text="last name">
+               <font>
+                  <Font name="Gabriola" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="email" layoutX="138.0" layoutY="76.0" text="E-mail">
+               <font>
+                  <Font name="Gabriola" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="51.0" fitWidth="23.0" layoutX="14.0" layoutY="108.0" onMouseClicked="#goAdminInfo" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/3082134-200.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="163.0" prefHeight="474.0" prefWidth="170.0" style="-fx-border-color: black; -fx-border-radius: 10px;">
+         <children>
+            <Button fx:id="personnels" alignment="CENTER_RIGHT" layoutX="4.0" layoutY="58.0" mnemonicParsing="false" onAction="#goPersonnels" prefHeight="32.0" prefWidth="103.0" style="-fx-background-color: fff; -fx-border-color: black; -fx-border-radius: 15px;" text="personnels" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="equipes" alignment="CENTER_RIGHT" layoutX="3.0" layoutY="143.0" mnemonicParsing="false" onAction="#goEquipes" prefHeight="32.0" prefWidth="103.0" style="-fx-background-color: fff; -fx-border-color: black; -fx-border-radius: 15px;" text="equipes" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="entet" alignment="CENTER_RIGHT" layoutX="2.0" layoutY="101.0" mnemonicParsing="false" onAction="#goEntet" prefHeight="32.0" prefWidth="103.0" style="-fx-background-color: fff; -fx-border-color: black; -fx-border-radius: 15px;" text="entet" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="75.0" fitWidth="23.0" layoutX="27.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/87eaf2fc2c958e21e37973904d1a625d.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="30.0" layoutX="27.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/person-1767893-1502146.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="39.0" layoutX="26.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/unnamed.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <Button fx:id="logout" layoutX="478.0" layoutY="593.0" mnemonicParsing="false" onAction="#adminLogout" prefHeight="44.0" prefWidth="110.0" style="-fx-background-color: black;" text="logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
